@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				Mood Poll Tracker
+				<div id="tagline"><em>How are you feeling today?</em></div>
+			</header>
+			<main>
+				<div id="openingForm" class="btn">
+					<button id="formShow" title="click to add mood">add mood</button>
+				</div>
+				<form id="moodInput">
+					<fieldset>
+						<div id="closingForm" class="btn">
+							<button id="formClose" title="click to close the form">x</button>	
+						</div>
+						<h2>how are you feeling?</h2>
+						<label for="happy">
+							<input id="happy" type="radio" value="happy" class="radioBtn">
+							<span>😄</span>
+						</label>
+						<label for="sad">
+							<input id="sad" type="radio" value="sad" class="radioBtn">
+							<span>☹️</span>
+						</label>
+						<label for="angry">
+							<input id="angry" type="radio" value="angry" class="radioBtn">
+							<span>😠</span>
+						</label>
+						<label for="anxious">
+							<input id="anxious" type="radio" value="anxious" class="radioBtn">
+							<span>😩</span>
+						</label>
+						<label for="excited">
+							<input id="excited" type="radio" value="excited" class="radioBtn">
+							<span>😃</span>
+						</label>
+						<label for="tired">
+							<input id="tired" type="radio" value="tired" class="radioBtn">
+							<span>😪</span>
+						</label>
+						<label for="meh">
+							<input id="meh" type="radio" value="meh" class="radioBtn">
+							<span>😑</span>
+						</label>
+						<label for="stressed">
+							<input id="stressed" type="radio" value="stressed" class="radioBtn">
+							<span>🤯</span>
+						</label>
+						<div id="submitForm">
+							<button id="formSubmit" type="submit" title="click to submit your mood">submit</button>	
+						</div>
+					</fieldset>
+				</form>
+				<section class="container">
+					<div class="moodPoll" title="joyful, content, or cheerful">
+						<div class="emoji">😄</div>
+						<div class="label">happy </div> 
+						<div class="count"></div>
+					</div>
+					<div class="moodPoll" title="down, upset, or disappointed">
+						<div class="emoji">☹️</div>
+						<div class="label">sad </div>
+						<div class="count"></div>
+					</div>
+					<div class="moodPoll" title="frustrated, annoyed, or mad">
+						<div class="emoji">😠</div>
+						<div class="label">angry </div>
+						<div class="count"></div>
+					</div>
+					<div class="moodPoll" title="nervous, uneasy, or stressed about something">
+						<div class="emoji">😩</div>
+						<div class="label">anxious </div>
+						<div class="count"></div>
+					</div>
+				</section>
+				<section class="container">
+					<div class="moodPoll" title="pumped up, thrilled, or looking forward to something">
+						<div class="emoji">😃</div>
+						<div class="label">excited </div>
+						<div class="count"></div>
+					</div>
+					<div class="moodPoll" title="exhausted, drained, or sleepy">
+						<div class="emoji">😪</div>
+						<div class="label">tired </div>
+						<div class="count"></div>
+					</div>
+					<div class="moodPoll" title="indifferent, unmotivated, or neutral">
+						<div class="emoji">😑</div>
+						<div class="label">meh </div>
+						<div class="count"></div>
+					</div>
+					<div class="moodPoll" title="overwhelmed, under pressure, or mentally overloaded">
+						<div class="emoji">🤯</div>
+						<div class="label">stressed </div>
+						<div class="count"></div>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<h1>Mood Count Poll – Created by Priyansh Kumar</h1>
+			</footer>
+			<script src="script.js"></script>
+		</div>
+	</body>
+</html>
