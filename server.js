@@ -16,6 +16,7 @@ if (!fs.existsSync(moodCountPath)) {
 }
 
 app.use(express.json());
+app.use(express.static(`public`));
 
 function getMoodCount() {
 	try {
@@ -36,6 +37,10 @@ function saveMoodCount(moodCount) {
 		console.error(`Error saving moodCount.json: ${err}`);
 	}
 }
+
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, 'public', 'home.html'));
+})
 
 app.get('/mood', (req, res) => {
 	const mood = getMoodCount();
